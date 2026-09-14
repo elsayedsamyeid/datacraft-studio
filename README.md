@@ -124,7 +124,7 @@ The setup includes the app-local Visual C++ runtime files and the Microsoft WebV
 
 **Requirements:** Windows 10 or 11, 64-bit.
 
-**Verify your download:** every release includes `SHA256SUMS.txt`. In PowerShell:
+**Verify your download:** the expected SHA-256 is printed directly in the release notes. In PowerShell:
 
 ```powershell
 Get-FileHash .\DataCraft-Studio-x64-setup.exe -Algorithm SHA256
