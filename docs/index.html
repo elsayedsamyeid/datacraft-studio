@@ -184,16 +184,16 @@
     <div class="feature">
       <div class="feature-text">
         <h3>Autocomplete that understands your engine</h3>
-        <p>Completion follows the active connection and dialect—not a generic word list. The editor keeps rich, relevant suggestions within reach while you type.</p>
+        <p>Completion follows the active connection and dialect—not a generic word list. PostgreSQL, MongoDB, Elasticsearch and SQL Server each receive suggestions shaped to their native query model.</p>
         <ul>
-          <li><strong>Connection-aware</strong>: the active database and SQL dialect stay visible</li>
-          <li><strong>Grouped results</strong>: snippets, keywords, objects and columns</li>
+          <li><strong>Provider-aware</strong>: SQL, aggregation pipelines and Query DSL</li>
+          <li><strong>Grouped results</strong>: snippets, keywords, objects, columns and fields</li>
           <li><strong>Preview before insert</strong>, including code and placeholder details</li>
           <li><strong>Keyboard-first</strong>: navigate, insert and advance through placeholders</li>
         </ul>
       </div>
       <div class="shot" style="margin:0">
-        <img src="assets/img/autocomplete-sqlserver.png" alt="DataCraft Studio SQL Server autocomplete showing grouped suggestions, a T-SQL snippet preview, placeholders and keyboard navigation." width="1730" height="973" loading="lazy">
+        <img src="assets/img/autocomplete-providers.png" alt="DataCraft Studio engine-aware autocomplete for PostgreSQL, MongoDB aggregation pipelines and Elasticsearch Query DSL." width="1730" height="973" loading="lazy">
       </div>
     </div>
 
@@ -291,28 +291,17 @@
       <h2>Download</h2>
       <p>Every build is published on GitHub Releases with SHA-256 checksums, so you can check exactly what you installed.</p>
     </div>
-    <div class="download-grid">
+    <div class="download-grid single">
       <div class="dl recommended">
-        <span class="dl-badge">Recommended</span>
-        <h3>Installer</h3>
-        <p>Recommended for most people<br><code>.exe</code></p>
-        <a class="btn btn-primary btn-sm" href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe">Download</a>
-      </div>
-      <div class="dl">
-        <h3>MSI package</h3>
-        <p>IT-managed and silent deployment<br><code>.msi</code></p>
-        <a class="btn btn-ghost btn-sm" href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64.msi">Download</a>
-      </div>
-      <div class="dl">
-        <h3>Portable</h3>
-        <p>No install. Keep the folder together<br><code>.zip</code></p>
-        <a class="btn btn-ghost btn-sm" href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-portable.zip">Download</a>
+        <span class="dl-badge">Free edition · v0.1.5</span>
+        <h3>One Windows installer</h3>
+        <p>Includes the app-local Visual C++ runtime and WebView2 setup.<br><strong>Nothing else to download.</strong></p>
+        <a class="btn btn-primary" href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe">Download DataCraft Studio Free</a>
       </div>
     </div>
     <p class="footnote" style="margin:28px auto 0;text-align:center">
-      Windows 10 or 11, 64-bit. The portable build needs the Microsoft WebView2 runtime, which
-      Windows 11 and up-to-date Windows 10 already include. macOS and Linux builds are not
-      published yet.
+      Windows 10 or 11, 64-bit. Every release includes a SHA-256 checksum.
+      macOS and Linux builds are not published yet.
     </p>
   </div>
 </section>
