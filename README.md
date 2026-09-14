@@ -68,9 +68,9 @@ Elasticsearch and MongoDB keep provider-specific builders for Query DSL, Find an
 
 Autocomplete follows the active connection and dialect—not a generic word list. In SQL Server, DataCraft groups snippets, objects, columns and keywords, previews the selected snippet, and guides you through placeholders without leaving the keyboard.
 
-<img src="assets/autocomplete-providers.png" alt="DataCraft Studio engine-aware autocomplete for PostgreSQL, MongoDB aggregation pipelines and Elasticsearch Query DSL." width="1200">
+<img src="assets/autocomplete-providers.png" alt="DataCraft Studio engine-aware autocomplete shared by SQL Server and PostgreSQL, with native completion for MongoDB aggregation pipelines and Elasticsearch Query DSL." width="1200">
 
-The same completion workflow adapts across engines: PostgreSQL SQL snippets, MongoDB aggregation stages, Elasticsearch Query DSL, and SQL Server T-SQL—each with provider-specific previews and placeholders.
+SQL Server and PostgreSQL share the relational SQL autocomplete workflow. MongoDB aggregation stages and Elasticsearch Query DSL keep native, provider-specific suggestions—each with rich previews and guided placeholders.
 
 ### One grid for every shape of data
 
