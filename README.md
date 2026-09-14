@@ -68,7 +68,9 @@ Build visually, inspect the generated query, preview the result, then save or ru
 
 Autocomplete follows the active connection and dialect—not a generic word list. In SQL Server, DataCraft groups snippets, objects, columns and keywords, previews the selected snippet, and guides you through placeholders without leaving the keyboard.
 
-<img src="assets/autocomplete-sqlserver.png" alt="DataCraft Studio SQL Server autocomplete showing grouped suggestions, a T-SQL snippet preview, placeholders and keyboard navigation." width="1200">
+<img src="assets/autocomplete-providers.png" alt="DataCraft Studio engine-aware autocomplete for PostgreSQL, MongoDB aggregation pipelines and Elasticsearch Query DSL." width="1200">
+
+The same completion workflow adapts across engines: PostgreSQL SQL snippets, MongoDB aggregation stages, Elasticsearch Query DSL, and SQL Server T-SQL—each with provider-specific previews and placeholders.
 
 ### One grid for every shape of data
 
@@ -114,13 +116,13 @@ Rows, documents, search hits and CSV lines all land in the same grid:
 
 ## Download
 
-| File | Best for |
-| --- | --- |
-| [**DataCraft-Studio-x64-setup.exe**](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe) | Most people. A standard Windows installer |
-| [**DataCraft-Studio-x64.msi**](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64.msi) | IT-managed machines and silent deployment |
-| [**DataCraft-Studio-x64-portable.zip**](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-portable.zip) | No install. Extract the **whole folder** and run the `.exe` |
+### [Download DataCraft Studio Free for Windows →](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe)
 
-**Requirements:** Windows 10 or 11, 64-bit. The portable build also needs the Microsoft WebView2 runtime, which Windows 11 and up-to-date Windows 10 already have. The installers add it automatically if it's missing.
+**One download. One installer. Nothing else required.**
+
+The setup includes the app-local Visual C++ runtime files and the Microsoft WebView2 bootstrapper. Users do not need to find or install the DLLs separately.
+
+**Requirements:** Windows 10 or 11, 64-bit.
 
 **Verify your download:** every release includes `SHA256SUMS.txt`. In PowerShell:
 
