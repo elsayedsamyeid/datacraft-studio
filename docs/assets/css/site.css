@@ -268,7 +268,7 @@ section { padding: 74px 0; }
 .feature li strong { color: var(--text); }
 
 @media (max-width: 900px) {
-  .feature { grid-template-columns: 1fr; gap: 30px; }
+  .feature, .feature.reverse { grid-template-columns: 1fr; gap: 30px; }
   .feature.reverse .feature-text { order: 0; }
 }
 
