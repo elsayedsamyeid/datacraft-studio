@@ -4,36 +4,39 @@
 
 # DataCraft Studio
 
-### Every database you use. One studio.
+### One workspace for every data source you use.
 
-PostgreSQL, SQL Server, MongoDB, Elasticsearch and CSV files in one explorer,<br>
-one editor and one result grid. Native, fast, and free.
+Explore, query and understand relational databases, document stores, search engines,<br>
+spreadsheets and local files—without switching tools or sending your data anywhere.
 
 [![Download for Windows](https://img.shields.io/badge/Download-Windows%20x64-2563eb?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe)
 &nbsp;
 [![Latest release](https://img.shields.io/github/v/release/elsayedsamyeid/datacraft-studio?style=for-the-badge&label=Latest&color=0f172a)](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest)
+&nbsp;
+[![Windows 10/11](https://img.shields.io/badge/Windows-10%20%2F%2011-0f172a?style=for-the-badge&logo=windows&logoColor=white)](#download)
 
-**Free forever** · **No account** · **Nothing sent home** · **Windows 10 / 11**
+**Free forever** · **No account** · **No telemetry** · **11 data sources**
 
 <br>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/screenshots/results-mongodb-dark.png">
-  <img src="assets/screenshots/results-mongodb-light.png" alt="DataCraft Studio showing MongoDB documents in the result grid, with typed column headers, nested objects and selection aggregates.">
-</picture>
+<img src="assets/social-card.png" alt="The real DataCraft Studio Free and Pro workspaces shown side by side." width="1200">
+
+<br>
+
+> **Official release repository.** Installers, documentation and issue tracking live here; the proprietary source code does not. Every download includes a SHA-256 checksum.
 
 </div>
 
 <br>
 
-## Why DataCraft
+## Why developers choose DataCraft
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
-### 🗄️ Five engines, one tool
-Relational, document, search and flat files share the same explorer, grid, shortcuts and export. MongoDB and Elasticsearch are **in the free build**, not an upsell.
+### 🗄️ Eleven sources, one tool
+Databases, document stores, search, spreadsheets and local files share the same explorer, grid, shortcuts and export. Provider coverage is **built in**, not bolted on.
 
 </td>
 <td width="33%" valign="top">
@@ -73,15 +76,18 @@ Installers carry the Visual C++ runtime and the WebView2 bootstrapper. Download,
 
 ## Supported data sources
 
-| Engine | Kind | Explorer | Editor & autocomplete | Result grid & export |
-| --- | --- | :---: | :---: | :---: |
-| **PostgreSQL** | Relational | ✅ | ✅ | ✅ |
-| **SQL Server** | Relational | ✅ | ✅ | ✅ |
-| **MongoDB** | Document | ✅ | ✅ | ✅ |
-| **Elasticsearch** | Search | ✅ | ✅ | ✅ |
-| **CSV & delimited files** | Local folder | ✅ | ✅ | ✅ |
+| Source | Kind | Source | Kind |
+| --- | --- | --- | --- |
+| **PostgreSQL** | Relational | **SQL Server** | Relational |
+| **MySQL / MariaDB** | Relational | **SQLite** | Embedded relational |
+| **DuckDB** | Analytical | **MongoDB** | Document |
+| **Elasticsearch** | Search | **CSV Files** | Delimited files |
+| **Excel Workbooks** | Spreadsheet | **JSON Files** | Document files |
+| **Parquet Files** | Columnar files |  |  |
 
-All five are in the free edition, with no limit on the number of connections.
+<img src="assets/providers-history.png" alt="DataCraft Studio showing its eleven-source connection picker and cross-provider Query History." width="1200">
+
+One connection flow covers all eleven source types. Query History then lets you search across providers, connections, databases, drafts, executions and failures.
 
 ## A closer look
 
@@ -156,11 +162,15 @@ Get-FileHash .\DataCraft-Studio-x64-setup.exe -Algorithm SHA256
 
 ## Free and Pro
 
-The free edition is a complete database studio for one developer on their own machine. It isn't a trial and has no time limit.
+Start with a complete free database workspace. Move to Pro when you need visual building, durable workspaces and end-to-end data workflows. Installing Pro over Free keeps your settings.
+
+<img src="assets/pro-workflows.png" alt="DataCraft Studio Pro showing the Workspace manager and Migration designer." width="1200">
+
+The free edition isn't a trial and has no time limit.
 
 | | Free | Pro *(coming)* |
 | --- | :---: | :---: |
-| All five engines, unlimited connections | ✅ | ✅ |
+| All eleven data sources, unlimited connections | ✅ | ✅ |
 | Metadata explorer | ✅ | ✅ |
 | Query editor with engine-aware autocomplete | ✅ | ✅ |
 | Result grid, JSON viewer, aggregates, export | ✅ | ✅ |
@@ -179,13 +189,13 @@ Pro will unlock with an **offline licence key** pasted into Settings. There's st
 <details>
 <summary><b>Is the free edition really free?</b></summary>
 <br>
-Yes. It has no time limit, no connection limit and no account. All five engines are included, because a free build that locks out databases isn't much use.
+Yes. It has no time limit, no connection limit and no account. All supported data sources are included, because a free build that locks out your data isn't much use.
 </details>
 
 <details>
 <summary><b>Does DataCraft collect data about me?</b></summary>
 <br>
-No. There is no telemetry and nothing to sign into. The free edition only connects to the databases you add.
+No. There is no telemetry and nothing to sign into. The free edition only connects to the data sources you add.
 </details>
 
 <details>
