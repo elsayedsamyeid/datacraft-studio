@@ -21,58 +21,23 @@ spreadsheets and local files—without switching tools or sending your data anyw
 
 <img src="assets/social-card.png" alt="The real DataCraft Studio Free and Pro workspaces shown side by side." width="1200">
 
-<br>
-
-> **Official release repository.** Installers, documentation and issue tracking live here; the proprietary source code does not. Every download includes a SHA-256 checksum.
-
 </div>
 
 <br>
 
-## Why developers choose DataCraft
+> [!NOTE]
+> **Official release repository.** Installers, documentation and issue tracking live here; proprietary source code does not. Every release includes SHA-256 checksums.
 
-<table>
-<tr>
-<td width="33%" valign="top">
+## One workflow, built properly
 
-### 🗄️ Eleven sources, one tool
-Databases, document stores, search, spreadsheets and local files share the same explorer, grid, shortcuts and export. Provider coverage is **built in**, not bolted on.
+DataCraft is designed around the work—not around one database driver.
 
-</td>
-<td width="33%" valign="top">
-
-### ⚡ Native, not a JVM
-A Rust core in a native window. It starts like a desktop app, stays light on memory, and needs no Java runtime.
-
-</td>
-<td width="33%" valign="top">
-
-### 🔒 Your data stays yours
-No sign-up, no login, no usage tracking. Passwords live in **Windows Credential Manager**, never in a profile file.
-
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-
-### 🧠 Autocomplete that knows your engine
-Suggestions come from the live schema: columns with their native types, alias scope, functions with signatures, MongoDB fields and operators.
-
-</td>
-<td width="33%" valign="top">
-
-### 🧩 No dead buttons
-Each engine declares what it can do, and the interface is built from that. If an engine can't do something, you won't see a button for it.
-
-</td>
-<td width="33%" valign="top">
-
-### 📦 Nothing else to install
-Installers carry the Visual C++ runtime and the WebView2 bootstrapper. Download, install, connect.
-
-</td>
-</tr>
-</table>
+- **Connect broadly.** Eleven source types use one consistent connection flow.
+- **Stay in context.** The same explorer, editor, result grid, shortcuts and export follow you across providers.
+- **Get useful completion.** Suggestions come from live schema metadata, including native types, aliases, fields and functions.
+- **Keep your data private.** No account, no telemetry, and credentials stay in Windows Credential Manager.
+- **Run native.** A Rust core and native window deliver desktop startup without a Java runtime.
+- **See only what works.** Provider capabilities shape the interface, so unsupported actions do not become dead buttons.
 
 ## Supported data sources
 
