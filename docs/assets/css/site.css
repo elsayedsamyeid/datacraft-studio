@@ -222,7 +222,7 @@ section { padding: 74px 0; }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 22px;
 }
 .card {
@@ -310,7 +310,7 @@ table.compare td.feat { font-weight: 600; }
 
 .plans {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 24px;
   max-width: 880px;
   margin: 0 auto;
@@ -356,7 +356,7 @@ table.compare td.feat { font-weight: 600; }
 
 .download-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 18px;
   max-width: 900px;
   margin: 0 auto;
@@ -418,6 +418,9 @@ table.compare td.feat { font-weight: 600; }
 
 @media (max-width: 720px) {
   .site-nav a:not(.btn) { display: none; }
+  .site-header .wrap { gap: 12px; }
+  .plan, .card { padding: 22px; }
+  .cta { padding: 40px 22px; }
   section { padding: 54px 0; }
   .hero { padding: 56px 0 40px; }
 }
