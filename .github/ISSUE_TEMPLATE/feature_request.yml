@@ -22,9 +22,15 @@ body:
       options:
         - PostgreSQL
         - SQL Server
+        - MySQL / MariaDB
+        - SQLite
+        - DuckDB
         - MongoDB
         - Elasticsearch
-        - CSV / delimited files
+        - CSV files
+        - Excel workbooks
+        - JSON files
+        - Parquet files
         - A data source that isn't supported yet
         - All of them
   - type: textarea

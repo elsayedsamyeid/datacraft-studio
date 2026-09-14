@@ -1,0 +1,44 @@
+name: Pro request
+description: Ask for DataCraft Pro to be enabled on your account
+title: "Pro request"
+labels: ["pro-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Pro is available on request while pricing is finalised.
+
+        **Before you submit:** in DataCraft Studio, open **Settings → Features → Plan** and choose
+        **Sign in to unlock Pro**. Create your account in the browser page that opens, and verify your email.
+
+        **This issue is public.** Never post your full email address or any password here.
+  - type: input
+    id: email-hint
+    attributes:
+      label: Your account email, partly hidden
+      description: Enough to find your account without publishing it, e.g. s****@gmail.com
+      placeholder: "s****@gmail.com"
+    validations:
+      required: true
+  - type: input
+    id: signed-in
+    attributes:
+      label: When did you first sign in?
+      description: The date, and roughly the time with your time zone.
+      placeholder: "2026-09-15, around 14:00 UTC+3"
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: What will you use Pro for?
+      description: Optional. Which Pro features you need helps decide what comes next.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Checklist
+      options:
+        - label: I signed in from the app and verified my email.
+          required: true
+        - label: I did not post my full email address or any password.
+          required: true

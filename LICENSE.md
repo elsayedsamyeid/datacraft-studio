@@ -1,10 +1,12 @@
-# DataCraft Studio — Free Edition Licence
+# DataCraft Studio — Licence
 
 Copyright © 2026 Sayed Masry. All rights reserved.
 
 DataCraft Studio ("the Software") is proprietary software. It is free to use but it is **not**
-open source. This licence covers the free edition distributed through this repository's
-releases.
+open source. This licence covers the Software distributed through this repository's releases.
+One installer contains both the free features and the Pro features; the Pro features are
+available only while signed in with a DataCraft Pro account, and paid use of them is governed
+by the terms of that account in addition to this licence.
 
 ## 1. What you may do
 
@@ -23,7 +25,8 @@ You may not:
 - modify, decompile, disassemble or reverse engineer the Software, except where applicable
   law expressly permits it despite this restriction;
 - remove or alter any copyright notice, licence text or trademark in the Software;
-- circumvent any mechanism that separates the free edition from paid features;
+- circumvent, disable or tamper with the sign-in, licence, device or entitlement checks that
+  control access to Pro features, or share one Pro licence between people;
 - redistribute the Software publicly from a location other than this repository without
   written permission.
 
@@ -34,8 +37,10 @@ copyright holder.
 
 ## 4. Your data
 
-The Software does not collect or transmit usage data. It connects only to the data sources
-you configure. You are responsible for the data you process with the Software.
+The Software does not collect or transmit usage data. Without an account it connects only to
+the data sources you configure. If you sign in, it also contacts the DataCraft account service
+to verify your plan, sending your sign-in and an anonymous device identifier. You are
+responsible for the data you process with the Software.
 
 ## 5. No warranty
 

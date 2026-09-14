@@ -5,14 +5,26 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report this. **Don't include passwords, connection strings or private data.**
+        Thanks for taking the time to report this. **Don't include passwords, connection strings, your full email address or private data.**
         For security issues, use the Security tab instead. See SECURITY.md.
+        To ask for Pro on your account, use the **Pro request** form instead.
   - type: input
     id: version
     attributes:
       label: DataCraft Studio version
-      description: Settings → About
+      description: Windows Settings → Apps → Installed apps → DataCraft Studio, or the release you downloaded
       placeholder: "0.1.5"
+    validations:
+      required: true
+  - type: dropdown
+    id: plan
+    attributes:
+      label: Plan
+      description: Shown in DataCraft under Settings → Features → Plan
+      options:
+        - Free, not signed in
+        - Free, signed in
+        - Pro
     validations:
       required: true
   - type: dropdown
@@ -40,9 +52,16 @@ body:
       options:
         - PostgreSQL
         - SQL Server
+        - MySQL / MariaDB
+        - SQLite
+        - DuckDB
         - MongoDB
         - Elasticsearch
-        - CSV / delimited files
+        - CSV files
+        - Excel workbooks
+        - JSON files
+        - Parquet files
+        - Sign-in or Pro unlock
         - Not related to a data source
   - type: input
     id: engine-version
