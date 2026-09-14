@@ -6,11 +6,20 @@
 <title>DataCraft Studio: one database studio for SQL, MongoDB, Elasticsearch and CSV</title>
 <meta name="description" content="A free, native Windows database studio that puts PostgreSQL, SQL Server, MongoDB, Elasticsearch and CSV files in one explorer, one editor and one result grid.">
 
-<meta property="og:title" content="DataCraft Studio">
-<meta property="og:description" content="Every database you use. One studio. Free, native, no account required.">
+<meta name="theme-color" content="#07111f">
+<link rel="canonical" href="https://elsayedsamyeid.github.io/datacraft-studio/">
+<meta property="og:title" content="DataCraft Studio — One workspace for every data source">
+<meta property="og:description" content="A native Windows data workspace with 11 source types, a unified editor and result grid, and powerful Pro workflows.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/img/results-mongodb-dark.png">
+<meta property="og:site_name" content="DataCraft Studio">
+<meta property="og:url" content="https://elsayedsamyeid.github.io/datacraft-studio/">
+<meta property="og:image" content="https://elsayedsamyeid.github.io/datacraft-studio/assets/img/social-card.png">
+<meta property="og:image:width" content="1730">
+<meta property="og:image:height" content="973">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DataCraft Studio">
+<meta name="twitter:description" content="One workspace for every data source. Free for Windows.">
+<meta name="twitter:image" content="https://elsayedsamyeid.github.io/datacraft-studio/assets/img/social-card.png">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232563eb'/><text x='16' y='22' font-family='sans-serif' font-size='14' font-weight='bold' fill='white' text-anchor='middle'>DC</text></svg>">
 <link rel="stylesheet" href="assets/css/site.css">
@@ -23,10 +32,10 @@
       <span class="brand-mark">DC</span>
       DataCraft Studio
     </a>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Primary navigation">
       <a href="#different">Why DataCraft</a>
       <a href="#features">Features</a>
-      <a href="#pricing">Free &amp; Pro</a>
+      <a href="#pricing">Editions</a>
       <a href="#download">Download</a>
       <a class="btn btn-primary btn-sm" href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe">Download</a>
     </nav>
@@ -36,11 +45,11 @@
 <!-- ============================================================== hero -->
 <div class="hero" id="top">
   <div class="wrap">
-    <span class="eyebrow">Free forever · No account · Nothing sent home</span>
-    <h1>Every database you use.<br><span class="accent">One studio.</span></h1>
+    <span class="eyebrow">DataCraft Studio 0.1.5 · Free for Windows</span>
+    <h1>Every data source.<br><span class="accent">One focused workspace.</span></h1>
     <p class="lead">
-      PostgreSQL, SQL Server, MongoDB, Elasticsearch and CSV files share one explorer, one
-      editor and one result grid, so you don't need a different tool for each data source.
+      Query databases, document stores, search engines, spreadsheets and local files through
+      one native interface—then move into complete Pro workflows when the job gets bigger.
     </p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe">
@@ -52,17 +61,19 @@
         Releases on GitHub
       </a>
     </div>
-    <p class="hero-note">Windows 10 and 11, 64-bit. No sign-up and no trial clock.</p>
-
-    <div class="shot">
-      <picture>
-        <source srcset="assets/img/results-mongodb-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="assets/img/results-mongodb-light.png"
-             alt="DataCraft Studio showing MongoDB documents in the result grid, with typed column headers, nested objects and selection aggregates in the status bar."
-             width="3200" height="1640">
-      </picture>
+    <div class="trust-row" aria-label="Product highlights">
+      <span>✓ 11 data sources</span>
+      <span>✓ No account</span>
+      <span>✓ No telemetry</span>
+      <span>✓ SHA-256 verified releases</span>
     </div>
-    <p class="shot-caption">MongoDB documents in the result grid, with nested objects, arrays and missing fields shown as they are.</p>
+
+    <div class="shot hero-shot">
+      <img src="assets/img/social-card.png"
+           alt="The real DataCraft Studio Free and Pro workspaces shown side by side."
+           width="1730" height="973">
+    </div>
+    <p class="shot-caption">The real Free and Pro editions—one familiar workspace, with advanced workflows when you need them.</p>
   </div>
 </div>
 
@@ -70,15 +81,41 @@
 <section class="section-alt">
   <div class="wrap">
     <div class="section-head">
-      <h2>Five engines, one tool</h2>
-      <p>Every engine gets the same explorer, the same grid, the same keyboard shortcuts and the same export. All five are in the free edition.</p>
+      <h2>Eleven sources, one connection flow</h2>
+      <p>Relational, document, search, analytical, spreadsheet and file sources all enter through the same clear workflow.</p>
     </div>
     <div class="providers">
-      <span class="provider-pill"><span class="dot" style="background:#336791"></span> PostgreSQL <small>relational</small></span>
-      <span class="provider-pill"><span class="dot" style="background:#cc2927"></span> SQL Server <small>relational</small></span>
-      <span class="provider-pill"><span class="dot" style="background:#00ed64"></span> MongoDB <small>document</small></span>
-      <span class="provider-pill"><span class="dot" style="background:#fec514"></span> Elasticsearch <small>search</small></span>
-      <span class="provider-pill"><span class="dot" style="background:#64748b"></span> CSV &amp; delimited files <small>local folder</small></span>
+      <span class="provider-pill"><span class="dot" style="background:#336791"></span> PostgreSQL</span>
+      <span class="provider-pill"><span class="dot" style="background:#cc2927"></span> SQL Server</span>
+      <span class="provider-pill"><span class="dot" style="background:#00758f"></span> MySQL / MariaDB</span>
+      <span class="provider-pill"><span class="dot" style="background:#0f80cc"></span> SQLite</span>
+      <span class="provider-pill"><span class="dot" style="background:#f6d90b"></span> DuckDB</span>
+      <span class="provider-pill"><span class="dot" style="background:#00ed64"></span> MongoDB</span>
+      <span class="provider-pill"><span class="dot" style="background:#fec514"></span> Elasticsearch</span>
+      <span class="provider-pill"><span class="dot" style="background:#16a34a"></span> CSV Files</span>
+      <span class="provider-pill"><span class="dot" style="background:#15803d"></span> Excel Workbooks</span>
+      <span class="provider-pill"><span class="dot" style="background:#334155"></span> JSON Files</span>
+      <span class="provider-pill"><span class="dot" style="background:#7c3aed"></span> Parquet Files</span>
+    </div>
+  </div>
+</section>
+
+<section class="showcase-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">The real product</span>
+      <h2>See the workflow, not a mockup</h2>
+      <p>These views come from DataCraft Studio 0.1.5 and show the actual product surfaces users work in.</p>
+    </div>
+    <div class="showcase-stack">
+      <figure class="showcase-card">
+        <img src="assets/img/providers-history.png" alt="The eleven-source connection picker beside cross-provider Query History." width="1730" height="973" loading="lazy">
+        <figcaption><strong>Connect broadly.</strong> Eleven source types enter through one connection flow, while Query History keeps tabs, drafts, runs and failures searchable.</figcaption>
+      </figure>
+      <figure class="showcase-card">
+        <img src="assets/img/pro-workflows.png" alt="The Pro Workspace manager and Migration designer." width="1730" height="973" loading="lazy">
+        <figcaption><strong>Finish the whole job.</strong> Pro adds a durable Workspace and a visual Migration designer for multi-step data workflows.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -95,7 +132,7 @@
       <div class="card">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg></div>
         <h3>NoSQL is not an upsell</h3>
-        <p>MongoDB and Elasticsearch are in the free edition alongside the SQL engines. A mixed stack doesn't mean two licences or two applications.</p>
+        <p>DataCraft covers SQL, NoSQL, analytical engines, spreadsheets and local files in one provider-aware workspace.</p>
       </div>
 
       <div class="card">
@@ -215,7 +252,7 @@
         <div class="price">$0</div>
         <p class="tagline">Forever. No trial clock, no account.</p>
         <ul>
-          <li>All five engines</li>
+          <li>All eleven data sources</li>
           <li>Unlimited connections</li>
           <li>Full metadata explorer</li>
           <li>Query editor with engine-aware autocomplete</li>
@@ -253,7 +290,8 @@
       <p>Every build is published on GitHub Releases with SHA-256 checksums, so you can check exactly what you installed.</p>
     </div>
     <div class="download-grid">
-      <div class="dl">
+      <div class="dl recommended">
+        <span class="dl-badge">Recommended</span>
         <h3>Installer</h3>
         <p>Recommended for most people<br><code>.exe</code></p>
         <a class="btn btn-primary btn-sm" href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe">Download</a>
