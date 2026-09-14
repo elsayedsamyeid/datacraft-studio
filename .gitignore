@@ -1,0 +1,10 @@
+# Release binaries are attached to GitHub Releases, never committed.
+dist/
+*.exe
+*.msi
+*.zip
+*.dll
+
+Thumbs.db
+desktop.ini
+.DS_Store

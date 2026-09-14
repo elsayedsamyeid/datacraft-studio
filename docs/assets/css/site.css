@@ -1,0 +1,423 @@
+/*
+ * DataCraft Studio marketing site.
+ *
+ * The palette is lifted from the app's own tokens (apps/desktop/src/app/theme-tokens.css)
+ * so the site and the product read as one thing. Light is the base; dark is applied under
+ * prefers-color-scheme, which also swaps every screenshot through <picture>.
+ */
+
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f6f8fb;
+  --panel: #ffffff;
+  --text: #0f172a;
+  --text-secondary: #475569;
+  --muted: #64748b;
+  --border: #d8e0ea;
+  --border-subtle: #e7ecf3;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-soft: #eaf2ff;
+  --success: #047857;
+  --success-soft: #dcfce7;
+  --rail: #0b1729;
+  --shadow: 0 24px 60px -20px rgb(15 23 42 / 28%);
+  --radius: 14px;
+  --maxw: 1180px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --bg-alt: #0f1a2c;
+    --panel: #111c30;
+    --text: #e8eef8;
+    --text-secondary: #a9b8cd;
+    --muted: #8296b0;
+    --border: #223349;
+    --border-subtle: #1a2942;
+    --primary: #4d8dff;
+    --primary-hover: #6ba0ff;
+    --primary-soft: #16294a;
+    --success: #34d399;
+    --success-soft: #10291f;
+    --rail: #060d1a;
+    --shadow: 0 24px 60px -20px rgb(0 0 0 / 65%);
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+code, .mono {
+  font-family: "JetBrains Mono", "Cascadia Code", ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.92em;
+}
+
+.wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+/* ---------------------------------------------------------------- header */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  height: 66px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+.brand:hover { text-decoration: none; }
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 800;
+}
+.site-nav { display: flex; gap: 24px; margin-left: auto; align-items: center; }
+.site-nav a { color: var(--text-secondary); font-size: 15px; font-weight: 500; }
+.site-nav a:hover { color: var(--text); text-decoration: none; }
+.site-nav a.btn { color: #fff; }
+
+/* ----------------------------------------------------------------- button */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+}
+.btn:hover { text-decoration: none; transform: translateY(-1px); }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: var(--primary-hover); }
+.btn-ghost { border-color: var(--border); color: var(--text); background: var(--panel); }
+.btn-ghost:hover { border-color: var(--primary); }
+.btn-sm { padding: 8px 16px; font-size: 14px; }
+.btn svg { width: 17px; height: 17px; flex: none; }
+
+/* ------------------------------------------------------------------- hero */
+
+.hero { padding: 84px 0 60px; text-align: center; }
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-size: 13.5px;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 5.2vw, 3.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  margin: 0 0 22px;
+  font-weight: 800;
+}
+.hero h1 .accent { color: var(--primary); }
+.hero p.lead {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: var(--text-secondary);
+  max-width: 730px;
+  margin: 0 auto 34px;
+}
+.hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.hero-note { margin-top: 16px; font-size: 14px; color: var(--muted); }
+
+.shot {
+  margin-top: 54px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--panel);
+}
+/* `height: auto` is not optional here: the <img> tags carry width/height attributes so the
+   browser can reserve the right space before the file loads, and without this the attribute
+   height wins over the fluid width and every screenshot renders vertically squashed. */
+.shot img { width: 100%; height: auto; }
+.shot-caption {
+  font-size: 13.5px;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 14px;
+}
+
+/* --------------------------------------------------------------- sections */
+
+section { padding: 74px 0; }
+.section-alt { background: var(--bg-alt); border-block: 1px solid var(--border-subtle); }
+.section-head { max-width: 760px; margin: 0 auto 48px; text-align: center; }
+.section-head h2 {
+  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+  letter-spacing: -0.03em;
+  margin: 0 0 14px;
+  font-weight: 800;
+}
+.section-head p { color: var(--text-secondary); margin: 0; font-size: 1.05rem; }
+
+/* -------------------------------------------------------------- providers */
+
+.providers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.provider-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 20px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--panel);
+  font-size: 15px;
+  font-weight: 600;
+}
+.provider-pill .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.provider-pill small { color: var(--muted); font-weight: 500; }
+
+/* ------------------------------------------------------------------ cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 22px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+.card h3 { margin: 0 0 10px; font-size: 1.15rem; letter-spacing: -0.015em; }
+.card p { margin: 0; color: var(--text-secondary); font-size: 15.5px; }
+.card .icon {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  display: grid; place-items: center;
+  margin-bottom: 16px;
+}
+.card .icon svg { width: 21px; height: 21px; }
+
+/* --------------------------------------------------------------- features */
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 56px;
+  align-items: center;
+  padding: 56px 0;
+}
+.feature + .feature { border-top: 1px solid var(--border-subtle); }
+/* Reordering alone would leave the screenshot in the narrow column, so the track sizes
+   swap with it and the image keeps the wide side on every row. */
+.feature.reverse { grid-template-columns: 1.3fr 1fr; }
+.feature.reverse .feature-text { order: 2; }
+.feature h3 {
+  font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+  letter-spacing: -0.025em;
+  margin: 0 0 16px;
+}
+.feature p { color: var(--text-secondary); margin: 0 0 18px; }
+.feature ul { margin: 0; padding-left: 20px; color: var(--text-secondary); }
+.feature li { margin-bottom: 7px; }
+.feature li strong { color: var(--text); }
+
+@media (max-width: 900px) {
+  .feature { grid-template-columns: 1fr; gap: 30px; }
+  .feature.reverse .feature-text { order: 0; }
+}
+
+/* ------------------------------------------------------------ comparison */
+
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table.compare {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  font-size: 15.5px;
+}
+table.compare th, table.compare td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+}
+table.compare thead th {
+  background: var(--bg-alt);
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+table.compare thead th.us { color: var(--primary); }
+table.compare tbody tr:last-child td { border-bottom: none; }
+table.compare td.feat { font-weight: 600; }
+.yes { color: var(--success); font-weight: 600; }
+.no  { color: var(--muted); }
+.footnote { margin-top: 20px; font-size: 13.5px; color: var(--muted); max-width: 900px; }
+.footnote a { color: var(--muted); text-decoration: underline; }
+
+/* ---------------------------------------------------------------- pricing */
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+.plan {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.plan.featured { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); }
+.plan h3 { margin: 0 0 6px; font-size: 1.2rem; }
+.plan .price { font-size: 2.3rem; font-weight: 800; letter-spacing: -0.03em; margin: 10px 0 4px; }
+.plan .price small { font-size: 0.95rem; font-weight: 500; color: var(--muted); }
+.plan .tagline { color: var(--muted); font-size: 14.5px; margin: 0 0 22px; }
+.plan ul { list-style: none; padding: 0; margin: 0 0 26px; }
+.plan li { padding-left: 26px; position: relative; margin-bottom: 10px; font-size: 15.5px; color: var(--text-secondary); }
+.plan li::before {
+  content: "";
+  position: absolute; left: 0; top: 9px;
+  width: 13px; height: 7px;
+  border-left: 2px solid var(--success);
+  border-bottom: 2px solid var(--success);
+  transform: rotate(-45deg);
+}
+.plan .btn { margin-top: auto; justify-content: center; }
+.badge {
+  display: inline-block;
+  /* The plan is a flex column, whose default stretch would run the pill edge to edge. */
+  align-self: flex-start;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--success-soft);
+  color: var(--success);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* -------------------------------------------------------------- download */
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.dl {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--panel);
+  padding: 26px;
+  text-align: center;
+}
+.dl h3 { margin: 0 0 4px; font-size: 1.05rem; }
+.dl p { margin: 0 0 18px; color: var(--muted); font-size: 14px; }
+
+/* -------------------------------------------------------------------- faq */
+
+.faq { max-width: 800px; margin: 0 auto; }
+.faq details {
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 20px 0;
+}
+.faq summary {
+  cursor: pointer;
+  font-weight: 650;
+  font-size: 1.05rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--primary); font-weight: 700; }
+.faq details[open] summary::after { content: "\2212"; }
+.faq details p { color: var(--text-secondary); margin: 14px 0 0; }
+
+/* ------------------------------------------------------------------- cta */
+
+.cta {
+  background: var(--rail);
+  color: #e8eef8;
+  border-radius: var(--radius);
+  padding: 56px 40px;
+  text-align: center;
+}
+.cta h2 { margin: 0 0 12px; font-size: clamp(1.6rem, 3.2vw, 2.2rem); letter-spacing: -0.03em; }
+.cta p { margin: 0 0 26px; color: #a9b8cd; }
+
+/* ---------------------------------------------------------------- footer */
+
+.site-footer {
+  border-top: 1px solid var(--border-subtle);
+  padding: 40px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.site-footer .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; }
+.site-footer a { color: var(--muted); }
+.legal { max-width: 760px; margin-top: 14px; font-size: 13px; line-height: 1.6; }
+
+@media (max-width: 720px) {
+  .site-nav a:not(.btn) { display: none; }
+  section { padding: 54px 0; }
+  .hero { padding: 56px 0 40px; }
+}

@@ -1,0 +1,71 @@
+name: Bug report
+description: Something in DataCraft Studio doesn't work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. **Don't include passwords, connection strings or private data.**
+        For security issues, use the Security tab instead. See SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: DataCraft Studio version
+      description: Settings → About
+      placeholder: "0.1.5"
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: How did you install it?
+      options:
+        - Installer (.exe)
+        - MSI package (.msi)
+        - Portable (.zip)
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 23H2"
+    validations:
+      required: true
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Data source
+      multiple: true
+      options:
+        - PostgreSQL
+        - SQL Server
+        - MongoDB
+        - Elasticsearch
+        - CSV / delimited files
+        - Not related to a data source
+  - type: input
+    id: engine-version
+    attributes:
+      label: Data source version
+      placeholder: "PostgreSQL 16.3"
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Connect to ...
+        2. Open ...
+        3. Run ...
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or error text
+      description: Drag images in, or paste the exact error message.

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/elsayedsamyeid/datacraft-studio/security/advisories/new
+    about: Please report security issues privately, not as a public issue.
+  - name: Download the latest release
+    url: https://github.com/elsayedsamyeid/datacraft-studio/releases/latest
+    about: Make sure you're on the newest version before reporting a bug.

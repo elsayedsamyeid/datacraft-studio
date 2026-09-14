@@ -1,0 +1,34 @@
+name: Feature request
+description: Suggest something that would make DataCraft Studio more useful
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the task or problem, not just the feature. That helps find the best solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: How you picture it working.
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Which data sources does it affect?
+      multiple: true
+      options:
+        - PostgreSQL
+        - SQL Server
+        - MongoDB
+        - Elasticsearch
+        - CSV / delimited files
+        - A data source that isn't supported yet
+        - All of them
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: How do you handle it today?
+      description: Another tool, a workaround, or not at all.
