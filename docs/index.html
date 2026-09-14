@@ -179,20 +179,17 @@
 
     <div class="feature">
       <div class="feature-text">
-        <h3>Autocomplete with the schema behind it</h3>
-        <p>Completion uses cached metadata for the connection you're on, so it knows which tables are in scope, which alias belongs to which table, and each column's native type.</p>
+        <h3>Autocomplete that understands your engine</h3>
+        <p>Completion follows the active connection and dialect—not a generic word list. The editor keeps rich, relevant suggestions within reach while you type.</p>
         <ul>
-          <li><strong>Alias-aware</strong>: type <code>o.</code> and get that table's columns</li>
-          <li><strong>Native types</strong> next to every column</li>
-          <li><strong>Functions and procedures</strong> with their signatures</li>
-          <li><strong>Per engine</strong>: SQL dialects, MongoDB operators, Elasticsearch clauses</li>
+          <li><strong>Connection-aware</strong>: the active database and SQL dialect stay visible</li>
+          <li><strong>Grouped results</strong>: snippets, keywords, objects and columns</li>
+          <li><strong>Preview before insert</strong>, including code and placeholder details</li>
+          <li><strong>Keyboard-first</strong>: navigate, insert and advance through placeholders</li>
         </ul>
       </div>
       <div class="shot" style="margin:0">
-        <picture>
-          <source srcset="assets/img/completion-dark.png" media="(prefers-color-scheme: dark)">
-          <img src="assets/img/completion-light.png" alt="The SQL editor with an autocomplete popup listing columns, their native types and the table alias each one comes from." width="3200" height="2000" loading="lazy">
-        </picture>
+        <img src="assets/img/autocomplete-sqlserver.png" alt="DataCraft Studio SQL Server autocomplete showing grouped suggestions, a T-SQL snippet preview, placeholders and keyboard navigation." width="1730" height="973" loading="lazy">
       </div>
     </div>
 
