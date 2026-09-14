@@ -170,6 +170,7 @@ The free edition is a complete database studio for one developer on their own ma
 | Guided data import wizard | | ✅ |
 | Data migration between engines | | ✅ |
 | Dashboards and provider health | | ✅ |
+| AI assistant with your choice of model provider | | ✅ |
 
 Pro will unlock with an **offline licence key** pasted into Settings. There's still no account and no login, and it works on air-gapped machines. Installing Pro over Free upgrades in place and keeps your settings.
 
@@ -184,7 +185,7 @@ Yes. It has no time limit, no connection limit and no account. All five engines 
 <details>
 <summary><b>Does DataCraft collect data about me?</b></summary>
 <br>
-No. There is no telemetry and nothing to sign into. The app only connects to the databases you add. If you set up the optional AI assistant, it also connects to the model provider you choose.
+No. There is no telemetry and nothing to sign into. The free edition only connects to the databases you add.
 </details>
 
 <details>
