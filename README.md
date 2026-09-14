@@ -56,11 +56,11 @@ One connection flow covers all eleven source types. Query History then lets you 
 
 ## Visual query building, shaped to every engine
 
-Pro gives each engine a builder designed around its native model: a relational canvas for SQL Server, a visual Query DSL workflow for Elasticsearch, and document-first Find and Aggregation builders for MongoDB.
+SQL Server and PostgreSQL share the same relational visual builder: explore tables, build joins, select fields, add filters, grouping, ordering and parameters, then inspect the generated SQL.
 
-<img src="assets/query-builders.png" alt="DataCraft Studio Pro visual query builders for SQL Server, Elasticsearch and MongoDB." width="1200">
+<img src="assets/query-builder-relational.png" alt="DataCraft Studio Pro relational Query Builder shared by SQL Server and PostgreSQL." width="1200">
 
-Build visually, inspect the generated query, preview the result, then save or run it—all without forcing unlike engines into the same interface.
+Elasticsearch and MongoDB keep provider-specific builders for Query DSL, Find and Aggregation workflows. Build visually, preview the result, then save or run—without forcing unlike engines into the same interface.
 
 ## A closer look
 
