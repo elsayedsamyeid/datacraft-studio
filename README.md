@@ -54,6 +54,14 @@ DataCraft is designed around the work—not around one database driver.
 
 One connection flow covers all eleven source types. Query History then lets you search across providers, connections, databases, drafts, executions and failures.
 
+## Visual query building, shaped to every engine
+
+Pro gives each engine a builder designed around its native model: a relational canvas for SQL Server, a visual Query DSL workflow for Elasticsearch, and document-first Find and Aggregation builders for MongoDB.
+
+<img src="assets/query-builders.png" alt="DataCraft Studio Pro visual query builders for SQL Server, Elasticsearch and MongoDB." width="1200">
+
+Build visually, inspect the generated query, preview the result, then save or run it—all without forcing unlike engines into the same interface.
+
 ## A closer look
 
 ### Autocomplete that understands your engine
