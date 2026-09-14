@@ -58,9 +58,9 @@ One connection flow covers all eleven source types. Query History then lets you 
 
 SQL Server and PostgreSQL share the same relational visual builder: explore tables, build joins, select fields, add filters, grouping, ordering and parameters, then inspect the generated SQL.
 
-<img src="assets/query-builders.png" alt="One DataCraft Studio Pro showcase containing the shared SQL Server and PostgreSQL relational Query Builder, Elasticsearch Query DSL Builder, and MongoDB Find Query Builder." width="1200">
+<img src="assets/query-builders.png" alt="Four DataCraft Studio Pro Query Builder panels showing SQL Server, PostgreSQL, Elasticsearch and MongoDB." width="1200">
 
-One image, three native workflows: SQL Server and PostgreSQL share the relational canvas; Elasticsearch uses its Query DSL builder; MongoDB uses document-first Find and Aggregation builders. Build visually, preview the result, then save or run—without forcing unlike engines into the same interface.
+One image, four visible provider views: SQL Server and PostgreSQL each show the shared relational canvas; Elasticsearch shows its Query DSL builder; MongoDB shows its document-first Find builder. Build visually, preview the result, then save or run—without forcing unlike engines into the same interface.
 
 ## A closer look
 
@@ -68,9 +68,9 @@ One image, three native workflows: SQL Server and PostgreSQL share the relationa
 
 Autocomplete follows the active connection and dialect—not a generic word list. In SQL Server, DataCraft groups snippets, objects, columns and keywords, previews the selected snippet, and guides you through placeholders without leaving the keyboard.
 
-<img src="assets/autocomplete-providers.png" alt="DataCraft Studio engine-aware autocomplete shared by SQL Server and PostgreSQL, with native completion for MongoDB aggregation pipelines and Elasticsearch Query DSL." width="1200">
+<img src="assets/autocomplete-providers.png" alt="Four DataCraft Studio autocomplete panels showing SQL Server T-SQL, PostgreSQL SQL, MongoDB aggregation pipelines and Elasticsearch Query DSL." width="1200">
 
-SQL Server and PostgreSQL share the relational SQL autocomplete workflow. MongoDB aggregation stages and Elasticsearch Query DSL keep native, provider-specific suggestions—each with rich previews and guided placeholders.
+One image now shows all four autocomplete views separately. SQL Server and PostgreSQL share the relational SQL autocomplete workflow. MongoDB aggregation stages and Elasticsearch Query DSL keep native, provider-specific suggestions—each with rich previews and guided placeholders.
 
 ### One grid for every shape of data
 
