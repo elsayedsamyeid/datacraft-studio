@@ -56,14 +56,11 @@ One connection flow covers all eleven source types. Query History then lets you 
 
 ## A closer look
 
-### Autocomplete with the schema behind it
+### Autocomplete that understands your engine
 
-Type `o.` and you get that table's columns with their real types. Completion follows the tables in scope, knows which alias belongs to which table, and adapts to each engine's dialect.
+Autocomplete follows the active connection and dialect—not a generic word list. In SQL Server, DataCraft groups snippets, objects, columns and keywords, previews the selected snippet, and guides you through placeholders without leaving the keyboard.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/screenshots/completion-dark.png">
-  <img src="assets/screenshots/completion-light.png" alt="SQL editor with an autocomplete popup listing aliases, columns with native PostgreSQL types, and functions.">
-</picture>
+<img src="assets/autocomplete-sqlserver.png" alt="DataCraft Studio SQL Server autocomplete showing grouped suggestions, a T-SQL snippet preview, placeholders and keyboard navigation." width="1200">
 
 ### One grid for every shape of data
 
