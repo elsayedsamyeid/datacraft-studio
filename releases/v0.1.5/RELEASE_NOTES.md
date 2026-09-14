@@ -1,35 +1,40 @@
-## DataCraft Studio 0.1.5 — Free edition
+## DataCraft Studio 0.1.5 — Free Edition
 
-The first public release. A native Windows database studio for **PostgreSQL, SQL Server, MongoDB, Elasticsearch and CSV files**, with one explorer, one editor and one result grid. Free, no account.
+A native Windows data workspace for eleven source types. Free forever, with no account and no telemetry.
 
-### ⬇️ Which file do I need?
+## Download
 
-| File | Best for |
-| --- | --- |
-| **DataCraft-Studio-x64-setup.exe** | Most people. A standard installer |
-| **DataCraft-Studio-x64.msi** | IT-managed machines and silent deployment |
-| **DataCraft-Studio-x64-portable.zip** | No install. Extract the whole folder and run `DataCraft Studio.exe` |
+Click **DataCraft-Studio-x64-setup.exe** on the GitHub release. That is the only file you need.
 
-Requires Windows 10 or 11, 64-bit.
+The installer includes the app-local Microsoft Visual C++ runtime files required by the database engines and the Microsoft WebView2 bootstrapper. Do not download or place DLL files manually.
 
-### ✨ What's included
+**Requires:** Windows 10 or 11, 64-bit.
 
-- **All five engines** with unlimited connections
-- **Explorer** for schemas, tables, columns, indexes and keys, or collections and fields
-- **Query editor** with autocomplete based on your live schema: alias scope, native types, function signatures
-- **Result grid** with typed headers, search in results, selection aggregates, a JSON viewer for nested documents, and paging
-- **Export** to CSV, JSON and the clipboard
-- **Passwords in Windows Credential Manager**, never in profile files
-- Header system meters, plus light and dark themes
+## Included
 
-### 🔐 Verify your download
+- PostgreSQL, SQL Server, MySQL / MariaDB, SQLite and DuckDB
+- MongoDB and Elasticsearch
+- CSV, Excel, JSON and Parquet files
+- Provider-aware explorer and query editor
+- Engine-aware autocomplete with snippets, previews and placeholders
+- Unified result grid, JSON viewer, aggregates and export
+- Unlimited connections
+- Credentials protected by Windows Credential Manager
+
+## Verify the installer
+
+SHA-256:
+
+```text
+63aeb346a7691a1281fa2fd5fab812896dace00f9207a3091891b6337c93c429
+```
+
+In PowerShell:
 
 ```powershell
 Get-FileHash .\DataCraft-Studio-x64-setup.exe -Algorithm SHA256
 ```
 
-Compare the result with `SHA256SUMS.txt` attached below. If Windows SmartScreen warns about a new publisher, choose **More info → Run anyway** once the hash matches.
-
----
+If Windows SmartScreen warns about a new publisher, compare the hash first, then choose **More info → Run anyway**.
 
 Found a bug? [Open an issue](https://github.com/elsayedsamyeid/datacraft-studio/issues/new?template=bug_report.yml).
