@@ -23,8 +23,7 @@ Only the latest release receives security fixes. Please update before reporting.
 ## Verifying downloads
 
 Only download DataCraft Studio from this repository's
-[Releases](https://github.com/elsayedsamyeid/datacraft-studio/releases) page. Each release
-includes `SHA256SUMS.txt`. Before you run a file, check it:
+[Releases](https://github.com/elsayedsamyeid/datacraft-studio/releases) page. The installer SHA-256 is printed directly in each release's notes. Before you run it, check:
 
 ```powershell
 Get-FileHash .\DataCraft-Studio-x64-setup.exe -Algorithm SHA256
