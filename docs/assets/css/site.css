@@ -532,3 +532,20 @@ a:focus-visible, summary:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+
+/* Single, unmistakable release path */
+.download-grid.single {
+  grid-template-columns: minmax(0, 600px);
+  justify-content: center;
+}
+
+.download-grid.single .dl {
+  padding: 38px;
+  text-align: center;
+}
+
+.download-grid.single .btn {
+  width: 100%;
+  justify-content: center;
+}
