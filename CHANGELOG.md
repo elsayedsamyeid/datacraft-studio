@@ -9,8 +9,8 @@ First public release of the free edition.
 
 ### Included
 
-- **Five data sources:** PostgreSQL, SQL Server, MongoDB, Elasticsearch, and folders of CSV
-  or delimited files. Unlimited connections.
+- **Eleven data sources:** PostgreSQL, SQL Server, MySQL / MariaDB, SQLite, DuckDB, MongoDB,
+  Elasticsearch, CSV, Excel, JSON and Parquet. Unlimited connections.
 - **Connections:** a connection form built for each engine, with connection testing.
   Passwords are stored in Windows Credential Manager.
 - **Explorer:** browse databases, schemas, tables, columns, indexes and keys, or collections
@@ -25,7 +25,7 @@ First public release of the free edition.
 
 ### Packages
 
-- Windows x64 installer (`.exe`), MSI package (`.msi`) and portable build (`.zip`).
-- The installers include the Visual C++ runtime and install WebView2 if it is missing.
+- One Windows x64 installer (`.exe`) for the Free edition.
+- The installer includes the app-local Visual C++ runtime and installs WebView2 if it is missing.
 
 [0.1.5]: https://github.com/elsayedsamyeid/datacraft-studio/releases/tag/v0.1.5
