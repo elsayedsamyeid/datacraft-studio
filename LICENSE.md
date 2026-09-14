@@ -35,8 +35,7 @@ copyright holder.
 ## 4. Your data
 
 The Software does not collect or transmit usage data. It connects only to the data sources
-you configure and, if you enable it, to an AI model provider you choose. You are responsible
-for your use of those services and for the data you process with the Software.
+you configure. You are responsible for the data you process with the Software.
 
 ## 5. No warranty
 
