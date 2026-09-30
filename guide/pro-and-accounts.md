@@ -16,7 +16,7 @@ In Free, these show as **Requires Pro** under **Settings → Features**.
 
 ## Getting Pro
 
-Pro is available on request while pricing is finalised.
+Registering with your email creates a Free account. DataCraft enables Pro on that account after a Pro purchase is arranged. Registration alone does not unlock Pro.
 
 1. Open **Settings → Features → Plan** and choose **Sign in to unlock Pro**.
 2. The sign-in page opens in your **web browser**. Sign in, or create an account, and
@@ -24,8 +24,8 @@ Pro is available on request while pricing is finalised.
 3. [Open a Pro request](https://github.com/elsayedsamyeid/datacraft-studio/issues/new?template=pro_request.yml).
    Issues are public: give your email **partly hidden** (for example `s****@gmail.com`) and the
    day you signed in. Never post a password.
-4. When Pro is enabled on your account, **restart DataCraft Studio**. **Settings → Features → Plan**
-   shows **Pro**, and the Pro features unlock.
+4. After DataCraft enables Pro on your account, **sign out and sign in again**.
+   **Settings → Features → Plan** shows **Pro**, and the Pro features unlock.
 
 DataCraft never sees your password. The browser signs you in and hands the app a signed proof
 of your plan, which the app verifies itself.

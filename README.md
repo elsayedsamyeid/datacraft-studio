@@ -196,11 +196,11 @@ Free isn't a trial and has no time limit.
 
 ### How to get Pro
 
-Pro is available on request while pricing is finalised.
+Registering with your email creates a Free account. After a Pro purchase is arranged, DataCraft enables Pro on that account; registration alone does not unlock it.
 
 1. In the app, open **Settings → Features → Plan** and choose **Sign in to unlock Pro**. Sign-in opens in your browser—DataCraft never sees your password. Create an account there if you need one, and verify your email.
 2. [Open a Pro request](https://github.com/elsayedsamyeid/datacraft-studio/issues/new?template=pro_request.yml). Issues are public, so give your email partly hidden (for example `s****@gmail.com`).
-3. Once Pro is enabled on your account, restart DataCraft Studio. **Settings → Features → Plan** shows **Pro**.
+3. After DataCraft enables Pro on your account, sign out and sign in again. **Settings → Features → Plan** then shows **Pro**.
 
 One computer at a time, works offline for up to three days between checks. Details: [Pro and accounts](guide/pro-and-accounts.md).
 

@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Pro is available on request while pricing is finalised.
+        Registering with your email creates a Free account. Pro is enabled on that account after a purchase is arranged with DataCraft. Do not include payment details in this public issue.
 
         **Before you submit:** in DataCraft Studio, open **Settings → Features → Plan** and choose
         **Sign in to unlock Pro**. Create your account in the browser page that opens, and verify your email.
