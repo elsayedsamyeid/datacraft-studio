@@ -55,3 +55,6 @@ jobs:
               || { echo "BAD $notes: no setup checksum"; exit 1; }
             echo "ok  $notes"
           done
+
+      - name: Check public release version
+        run: python3 scripts/check_release_version.py --check

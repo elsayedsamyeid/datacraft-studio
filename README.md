@@ -35,6 +35,16 @@ spreadsheets and local files—in one native Windows app, without sending your d
 > [!NOTE]
 > **Official release repository.** Installers, documentation and issue tracking live here; the proprietary source code does not. Every release is published with SHA-256 checksums.
 
+## Your first result
+
+1. [Download the Windows installer](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe) and open DataCraft Studio. Free needs no account.
+2. Add a PostgreSQL connection in **Connections** and choose **Test**. The [connection guide](guide/connecting.md) covers all eleven sources.
+3. Open a query tab with **Ctrl+T**, run a query with **Ctrl+Enter**, then explore or export the result.
+
+<a href="guide/getting-started.md"><img src="assets/screenshots/hero-results-light.png" alt="A PostgreSQL query and its result grid in DataCraft Studio" width="900"></a>
+
+[Follow the first-query guide →](guide/getting-started.md)
+
 ## Why DataCraft Studio
 
 | | |
@@ -141,7 +151,9 @@ SQL Server and PostgreSQL share a relational visual builder; Elasticsearch gets 
 
 **Requirements:** Windows 10 or 11, 64-bit. The installers include the Visual C++ runtime—nothing else to install.
 
-**Verify your download** against the SHA-256 in the release notes:
+**Verify your download** against the SHA-256 in the release notes. This checks that the file matches the published release; it does not verify who published it. The v0.1.5 installers are not code signed.
+
+Check the file hash in PowerShell:
 
 ```powershell
 Get-FileHash .\DataCraft-Studio-x64-setup.exe -Algorithm SHA256
