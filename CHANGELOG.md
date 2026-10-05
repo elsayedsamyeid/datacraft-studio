@@ -3,6 +3,22 @@
 All notable changes to DataCraft Studio are listed here.
 Downloads for every version are on the [Releases](https://github.com/elsayedsamyeid/datacraft-studio/releases) page.
 
+## [0.1.6] — 2026-10-05
+
+### Fixed
+
+- **PostgreSQL:** a connection dropped by the network, a firewall or a server restart now
+  reconnects on the next action. Before, every refresh failed until you reconnected by hand.
+- **Explorer:** expanding a node no longer scrolls the tree down to the selected object.
+- **Query tabs:** a fresh installation no longer reopens query tabs left behind by an
+  earlier installation.
+
+### Changed
+
+- **MongoDB:** a simpler collection picker and result view in the query editor.
+- **Dashboards** are no longer offered while the feature is reworked. Provider health is
+  unchanged.
+
 ## [0.1.5] — 2026-09-15
 
 First public release.
@@ -34,4 +50,5 @@ First public release.
 - An `.msi` installer and a portable `.zip` for managed or no-install use.
 - The installers include the app-local Visual C++ runtime and install WebView2 if it is missing.
 
+[0.1.6]: https://github.com/elsayedsamyeid/datacraft-studio/releases/tag/v0.1.6
 [0.1.5]: https://github.com/elsayedsamyeid/datacraft-studio/releases/tag/v0.1.5

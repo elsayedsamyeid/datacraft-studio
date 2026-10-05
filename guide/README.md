@@ -1,7 +1,7 @@
 # DataCraft Studio user guide
 
 Everything you need to install DataCraft Studio, connect to your data, and get the most out
-of it. Written for version **0.1.5**.
+of it. Written for version **0.1.6**.
 
 | Guide | What's inside |
 | --- | --- |

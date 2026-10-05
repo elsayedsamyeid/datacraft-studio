@@ -69,6 +69,6 @@ For data sources that support it, the **Run** button turns into **Stop** while a
 
 - Learn the [keyboard shortcuts](keyboard-shortcuts.md).
 - Open the command palette with <kbd>Ctrl</kbd>+<kbd>K</kbd> to find anything.
-- Need visual query building, history, import, migration or dashboards? See [Pro and accounts](pro-and-accounts.md).
+- Need visual query building, history, import or migration? See [Pro and accounts](pro-and-accounts.md).
 
 [← User guide](README.md)

@@ -12,7 +12,7 @@ data sources you add. Pro sign-in shares the minimum needed to confirm your plan
 | --- | --- |
 | Connection profiles (host names, database names, options) | `%APPDATA%\DataCraft Studio` |
 | Database passwords, API keys and AI provider keys | Windows Credential Manager |
-| Query tabs, drafts, workspace, dashboards, history | `%APPDATA%\DataCraft Studio` |
+| Query tabs, drafts, workspace, history | `%APPDATA%\DataCraft Studio` |
 | Cached schema metadata for the explorer and autocomplete | `%APPDATA%\DataCraft Studio\metadata-cache` |
 | Interface preferences | `%LOCALAPPDATA%\com.datacraft.studio` |
 | Pro sign-in session (if you sign in) | Windows Credential Manager |

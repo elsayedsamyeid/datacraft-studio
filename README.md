@@ -39,11 +39,12 @@ spreadsheets and local files—in one native Windows app, without sending your d
 
 1. [Download the Windows installer](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe) and open DataCraft Studio. Free needs no account.
 2. Add a PostgreSQL connection in **Connections** and choose **Test**. The [connection guide](guide/connecting.md) covers all eleven sources.
-3. Open a query tab with **Ctrl+T**, run a query with **Ctrl+Enter**, then explore or export the result.
+3. Browse databases, tables and fields in the **Explorer**.
+4. Open a query tab with <kbd>Ctrl</kbd>+<kbd>T</kbd>, run a query with <kbd>Ctrl</kbd>+<kbd>Enter</kbd>, then explore or export the result.
 
 <a href="guide/getting-started.md"><img src="assets/screenshots/hero-results-light.png" alt="A PostgreSQL query and its result grid in DataCraft Studio" width="900"></a>
 
-[Follow the first-query guide →](guide/getting-started.md)
+[Follow the first-query guide →](guide/getting-started.md) · [Keyboard shortcuts](guide/keyboard-shortcuts.md)
 
 ## Why DataCraft Studio
 
@@ -151,7 +152,7 @@ SQL Server and PostgreSQL share a relational visual builder; Elasticsearch gets 
 
 **Requirements:** Windows 10 or 11, 64-bit. The installers include the Visual C++ runtime—nothing else to install.
 
-**Verify your download** against the SHA-256 in the release notes. This checks that the file matches the published release; it does not verify who published it. The v0.1.5 installers are not code signed.
+**Verify your download** against the SHA-256 in the release notes. This checks that the file matches the published release; it does not verify who published it. The installers are not code signed yet.
 
 Check the file hash in PowerShell:
 
@@ -160,15 +161,6 @@ Get-FileHash .\DataCraft-Studio-x64-setup.exe -Algorithm SHA256
 ```
 
 > Windows SmartScreen may warn about a new publisher. After checking the hash, choose **More info → Run anyway**.
-
-## Quick start
-
-1. **Install** and open DataCraft Studio.
-2. **Add a connection** in **Connections**, fill in the form for your engine, and **test** it.
-3. **Browse** databases, tables and fields in the **Explorer**.
-4. **Query**: press <kbd>Ctrl</kbd>+<kbd>T</kbd> for a new tab, write a query, and press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> to run it.
-
-Full walkthrough: [Getting started](guide/getting-started.md) · Shortcuts: [Keyboard shortcuts](guide/keyboard-shortcuts.md)
 
 ## Free and Pro
 
@@ -189,7 +181,7 @@ Full walkthrough: [Getting started](guide/getting-started.md) · Shortcuts: [Key
 | Query history and saved workspace | | ✅ |
 | Guided data import wizard | | ✅ |
 | Data migration between engines | | ✅ |
-| Dashboards and provider health | | ✅ |
+| Provider health checks | | ✅ |
 | AI assistant with your choice of model provider | | ✅ |
 
 Free isn't a trial and has no time limit.

@@ -4,7 +4,7 @@ This is the direction DataCraft Studio is heading. It is not a set of promises o
 priorities change with feedback. [Request a feature](https://github.com/elsayedsamyeid/datacraft-studio/issues/new?template=feature_request.yml)
 or 👍 an existing request to influence it.
 
-## Available now — 0.1.5
+## Available now — 0.1.6
 
 **Free**
 
@@ -23,7 +23,7 @@ or 👍 an existing request to influence it.
 - Query history and a saved workspace
 - Guided data import wizard
 - Data migration between engines
-- Dashboards and provider health
+- Provider health checks
 - AI assistant with your choice of model provider
 
 ## Next

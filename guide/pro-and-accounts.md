@@ -9,7 +9,7 @@ sign in. Signing in with a DataCraft Pro account unlocks the Pro features in the
 - Query history and a saved workspace
 - Guided data import wizard
 - Data migration between engines
-- Dashboards and provider health
+- Provider health checks
 - AI assistant with your choice of model provider
 
 In Free, these show as **Requires Pro** under **Settings → Features**.
