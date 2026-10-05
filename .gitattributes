@@ -1,5 +1,2 @@
-# This repository publishes DataCraft Studio releases and documentation; the application
-# source is not here. Keep GitHub's language bar from labelling it by its helper files.
-scripts/** linguist-vendored
-docs/** linguist-documentation
+# Releases and documentation only: the application source is not in this repository.
 *.md linguist-documentation

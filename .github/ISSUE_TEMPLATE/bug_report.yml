@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to report this. **Don't include passwords, connection strings, your full email address or private data.**
-        For security issues, use the Security tab instead. See SECURITY.md.
+        For security issues, report privately from the Security tab instead.
         To ask for Pro on your account, use the **Pro request** form instead.
   - type: input
     id: version
