@@ -5,22 +5,6 @@ Downloads for every version are on the [Releases](https://github.com/elsayedsamy
 
 ## [0.1.6] — 2026-10-05
 
-### Fixed
-
-- **PostgreSQL:** a connection dropped by the network, a firewall or a server restart now
-  reconnects on the next action. Before, every refresh failed until you reconnected by hand.
-- **Explorer:** expanding a node no longer scrolls the tree down to the selected object.
-- **Query tabs:** a fresh installation no longer reopens query tabs left behind by an
-  earlier installation.
-
-### Changed
-
-- **MongoDB:** a simpler collection picker and result view in the query editor.
-- **Dashboards** are no longer offered while the feature is reworked. Provider health is
-  unchanged.
-
-## [0.1.5] — 2026-09-15
-
 First public release.
 
 ### Included
@@ -28,17 +12,19 @@ First public release.
 - **Eleven data sources:** PostgreSQL, SQL Server, MySQL / MariaDB, SQLite, DuckDB, MongoDB,
   Elasticsearch, CSV, Excel, JSON and Parquet. Unlimited connections.
 - **Connections:** a connection form built for each engine, with connection testing.
-  Passwords are stored in Windows Credential Manager.
+  Passwords are stored in Windows Credential Manager. Dropped connections recover on the
+  next action.
 - **Explorer:** browse databases, schemas, tables, columns, indexes and keys, or collections
   and inferred fields. Metadata is cached locally.
 - **Query editor:** multiple query tabs with autocomplete based on the live schema, including
-  alias scope, native column types and function signatures.
+  alias scope, native column types and function signatures. MongoDB queries run from a shell
+  editor with a collection picker.
 - **Result grid:** typed column headers, search within results, selection aggregates,
   density and column controls, paging, and a JSON viewer for nested values.
 - **Export:** CSV and Excel files; copy as CSV, TSV, JSON or Markdown; complete large exports
   streamed to disk as CSV or NDJSON, optionally compressed.
 - **Command palette** to find commands, connections and tables.
-- **Header system meters** for CPU, memory, disk and network activity.
+- **Header system meters** for CPU and memory.
 - Light and dark themes.
 - **Optional sign-in:** Free needs no account. Signing in with a DataCraft Pro account
   unlocks Pro features in the same app. A Pro licence covers one computer at a time and works
@@ -51,4 +37,3 @@ First public release.
 - The installers include the app-local Visual C++ runtime and install WebView2 if it is missing.
 
 [0.1.6]: https://github.com/elsayedsamyeid/datacraft-studio/releases/tag/v0.1.6
-[0.1.5]: https://github.com/elsayedsamyeid/datacraft-studio/releases/tag/v0.1.5

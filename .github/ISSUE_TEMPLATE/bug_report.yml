@@ -13,7 +13,7 @@ body:
     attributes:
       label: DataCraft Studio version
       description: Windows Settings → Apps → Installed apps → DataCraft Studio, or the release you downloaded
-      placeholder: "0.1.5"
+      placeholder: "0.1.6"
     validations:
       required: true
   - type: dropdown

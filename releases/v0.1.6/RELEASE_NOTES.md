@@ -1,23 +1,25 @@
-## DataCraft Studio 0.1.6
+## DataCraft Studio 0.1.6 — first public release
 
-A reliability update. Free and Pro are still one app: free forever with no account, and Pro unlocks when you sign in with a DataCraft Pro account. No telemetry.
+A native Windows data workspace for eleven source types. One app for everyone: free forever with no account, and Pro features unlock in the same app when you sign in with a DataCraft Pro account. No telemetry.
 
-## What's fixed
+## Included
 
-- **PostgreSQL reconnects by itself.** A connection dropped by the network, a firewall or a server restart now recovers on your next action. Before, every refresh failed with "Failed" until you reconnected by hand.
-- **The explorer stays where you put it.** Expanding a node no longer scrolls the tree down to the selected object.
-- **A clean first run.** A fresh installation no longer reopens query tabs left behind by an earlier one.
+- PostgreSQL, SQL Server, MySQL / MariaDB, SQLite and DuckDB
+- MongoDB and Elasticsearch
+- CSV, Excel, JSON and Parquet files
+- Provider-aware explorer and query editor
+- Engine-aware autocomplete with snippets, previews and placeholders
+- Unified result grid, JSON viewer, aggregates and export
+- Unlimited connections, with passwords protected by Windows Credential Manager
+- Optional sign-in: a Pro account unlocks Pro features on one computer at a time, and keeps working offline for up to three days between checks
 
-## What's changed
+## Getting Pro
 
-- **MongoDB:** a simpler collection picker and result view in the query editor.
-- **Dashboards** are no longer offered while the feature is reworked. Provider health is unchanged.
-
-Full history: [CHANGELOG.md](https://github.com/elsayedsamyeid/datacraft-studio/blob/main/CHANGELOG.md).
+Pro is available on request. In the app, open **Settings → Features → Plan** and choose **Sign in to unlock Pro** (sign-in opens in your browser), then [open a Pro request](https://github.com/elsayedsamyeid/datacraft-studio/issues/new?template=pro_request.yml) with your email partly hidden. Once Pro is enabled, sign out and sign in again.
 
 ## Download
 
-Click **DataCraft-Studio-x64-setup.exe** below. That is the only file you need; it upgrades an existing installation in place and keeps your connections.
+Click **DataCraft-Studio-x64-setup.exe** below. That is the only file you need.
 
 Also attached: **DataCraft-Studio-x64.msi** for managed installs, and **DataCraft-Studio-x64-portable.zip** to run without installing (keep every file in the folder together).
 
