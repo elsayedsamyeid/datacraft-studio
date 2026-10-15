@@ -13,7 +13,7 @@ in one fast, native Windows app. Your data never leaves your machine.
 
 <a href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe"><img src="https://img.shields.io/badge/Download%20for%20Windows-2563eb?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows" height="44"></a>
 
-<sub>Windows 10 / 11 · 64-bit · Free forever · No account needed</sub>
+<sub>Windows 10 / 11 · 64-bit · Free forever · No account needed · <a href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest">Release notes</a></sub>
 
 <br><br>
 
@@ -156,18 +156,6 @@ One app for everyone. Free has no time limit and needs no account. Sign in with 
 <img src="assets/query-builders.png" alt="Pro visual query builders for SQL Server, PostgreSQL, Elasticsearch and MongoDB" width="100%">
 
 **Getting Pro:** in the app, open **Settings → Features → Plan** and choose **Sign in to unlock Pro**, then [request Pro](https://github.com/elsayedsamyeid/datacraft-studio/issues/new?template=pro_request.yml) with your email partly hidden (for example `s****@gmail.com`). Once it's enabled, sign out and in again.
-
-## ⬇️ Download
-
-<div align="center">
-
-<a href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe"><img src="https://img.shields.io/badge/Download%20for%20Windows-2563eb?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows" height="44"></a>
-
-<sub>Windows 10 / 11 · 64-bit · Free</sub>
-
-<sub><a href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest">Release notes and other installers</a></sub>
-
-</div>
 
 ## ❓ FAQ
 
