@@ -161,22 +161,27 @@ One app for everyone. Free has no time limit and needs no account. Sign in with 
 
 <div align="center">
 
-<a href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe"><img src="https://img.shields.io/badge/Download%20DataCraft%20Studio-2563eb?style=for-the-badge&logo=windows&logoColor=white" alt="Download DataCraft Studio" height="44"></a>
+<a href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe"><img src="https://img.shields.io/badge/Download%20for%20Windows-2563eb?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows" height="44"></a>
+
+<sub>Windows 10 / 11 · 64-bit · Free</sub>
+
+<sub><a href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest">Release notes and other installers</a></sub>
 
 </div>
 
-| Package | Best for |
-| --- | --- |
-| [**Setup (.exe)**](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-setup.exe) | Most people. Installs everything it needs. |
-| [**MSI**](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64.msi) | Managed or scripted installs. |
-| [**Portable (.zip)**](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest/download/DataCraft-Studio-x64-portable.zip) | Running without installing. Keep the folder together. |
-
-**Requirements:** Windows 10 or 11, 64-bit.
-
-> [!TIP]
-> The installers aren't code signed yet, so Windows SmartScreen may warn about a new publisher. Check the SHA-256 in the [release notes](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest) with `Get-FileHash .\DataCraft-Studio-x64-setup.exe`, then choose **More info → Run anyway**.
-
 ## ❓ FAQ
+
+<details>
+<summary><b>Windows says it protected my PC. Is DataCraft safe?</b></summary>
+<br>
+DataCraft isn't code signed yet, so Windows SmartScreen doesn't recognise the publisher. Choose <b>More info → Run anyway</b>. To check the download first, compare <code>Get-FileHash .\DataCraft-Studio-x64-setup.exe</code> with the SHA-256 in the <a href="https://github.com/elsayedsamyeid/datacraft-studio/releases/latest">release notes</a>.
+</details>
+
+<details>
+<summary><b>How do I update?</b></summary>
+<br>
+Pro updates itself: when a new version is ready, click <b>Install and restart</b>. On Free, download and run the new installer over the one you have. You never need to uninstall first, and your connections and settings are kept.
+</details>
 
 <details>
 <summary><b>Is Free really free?</b></summary>
