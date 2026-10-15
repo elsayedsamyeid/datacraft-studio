@@ -6,7 +6,7 @@
 
 ### One workspace for every data source you use.
 
-Explore, query and understand databases, document stores, search engines and local files<br>
+Explore, query and understand databases, document stores, search engines, vector stores and local files<br>
 in one fast, native Windows app. Your data never leaves your machine.
 
 <br>
@@ -20,7 +20,7 @@ in one fast, native Windows app. Your data never leaves your machine.
 [![Latest release](https://img.shields.io/github/v/release/elsayedsamyeid/datacraft-studio?style=flat-square&label=latest&color=0f172a)](https://github.com/elsayedsamyeid/datacraft-studio/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/elsayedsamyeid/datacraft-studio/total?style=flat-square&color=0f172a)](https://github.com/elsayedsamyeid/datacraft-studio/releases)
 ![No telemetry](https://img.shields.io/badge/telemetry-none-16a34a?style=flat-square)
-![Data sources](https://img.shields.io/badge/data%20sources-11-7c3aed?style=flat-square)
+![Data sources](https://img.shields.io/badge/data%20sources-12-7c3aed?style=flat-square)
 
 <br>
 
@@ -37,7 +37,7 @@ in one fast, native Windows app. Your data never leaves your machine.
 <td width="50%" valign="top">
 
 ### 🔌 Every source, one app
-PostgreSQL, SQL Server, MySQL, SQLite, DuckDB, MongoDB, Elasticsearch, CSV, Excel, JSON and Parquet, all through the same connection flow.
+PostgreSQL, SQL Server, MySQL, SQLite, DuckDB, MongoDB, Elasticsearch, Qdrant, CSV, Excel, JSON and Parquet, all through the same connection flow.
 
 </td>
 <td width="50%" valign="top">
@@ -90,7 +90,7 @@ CSV and Excel, copy as CSV, TSV, JSON or Markdown, and stream very large results
   <img src="assets/screenshots/json-viewer-light.png" alt="A nested MongoDB document in the JSON viewer" width="100%">
 </picture>
 
-**Eleven sources, one connection picker, and history across all of them.**
+**Every source in one connection picker, with history across all of them.**
 
 <img src="assets/providers-history.png" alt="The connection picker and cross-source query history" width="100%">
 
@@ -130,6 +130,7 @@ CSV and Excel, copy as CSV, TSV, JSON or Markdown, and stream very large results
 ![DuckDB](https://img.shields.io/badge/DuckDB-FFC700?style=for-the-badge&logo=duckdb&logoColor=black)
 ![MongoDB](https://img.shields.io/badge/MongoDB-00A35C?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge)
 ![CSV](https://img.shields.io/badge/CSV-16A34A?style=for-the-badge)
 ![Excel](https://img.shields.io/badge/Excel-15803D?style=for-the-badge)
 ![JSON](https://img.shields.io/badge/JSON-334155?style=for-the-badge)
@@ -141,7 +142,7 @@ One app for everyone. Free has no time limit and needs no account. Sign in with 
 
 | | Free | Pro |
 | --- | :---: | :---: |
-| All eleven data sources, unlimited connections | ✅ | ✅ |
+| All twelve data sources, unlimited connections | ✅ | ✅ |
 | Metadata explorer and database search | ✅ | ✅ |
 | Query editor with engine-aware autocomplete | ✅ | ✅ |
 | Result grid, JSON viewer, aggregates, export | ✅ | ✅ |
@@ -174,7 +175,7 @@ Pro updates itself: when a new version is ready, click <b>Install and restart</b
 <details>
 <summary><b>Is Free really free?</b></summary>
 <br>
-Yes. No time limit, no connection limit and no account. All eleven data sources are included.
+Yes. No time limit, no connection limit and no account. All twelve data sources are included.
 </details>
 
 <details>
@@ -211,4 +212,4 @@ If DataCraft Studio helps you, **give it a star** so others can find it.
 
 ---
 
-<sub>© 2026 Sayed Masry. Free to use under the <a href="LICENSE.md">licence</a>. PostgreSQL, SQL Server, MySQL, MariaDB, SQLite, DuckDB, MongoDB, Elasticsearch, Excel and Parquet are trademarks of their respective owners, named only to identify the data sources DataCraft connects to.</sub>
+<sub>© 2026 Sayed Masry. Free to use under the <a href="LICENSE.md">licence</a>. PostgreSQL, SQL Server, MySQL, MariaDB, SQLite, DuckDB, MongoDB, Elasticsearch, Qdrant, Excel and Parquet are trademarks of their respective owners, named only to identify the data sources DataCraft connects to.</sub>
